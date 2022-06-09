@@ -4,7 +4,7 @@
       <PipelineSequence name="NavigateWithReplanning">
         <RateController hz="1.0">
           <RecoveryNode number_of_retries="1" name="ComputePathToPose">
-            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBasedCustom"/>
             <ClearEntireCostmap service_name="global_costmap/clear_entirely_global_costmap"/>
           </RecoveryNode>
         </RateController>
